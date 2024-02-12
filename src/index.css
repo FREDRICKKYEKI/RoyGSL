@@ -1,68 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  /* main colors */
+  --color-primary: #800080;
+  --color-secondary: #f8ac39;
+  --color-tertiary: hwb(36 22% 3%);
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* grayscale */
+  --color-gray-01: #7b797b;
+  --color-gray-02: #9b999b;
+  --color-gray-03: #c0c0c0;
+  --color-gray-04: #dbdbdb;
+  --color-gray-05: #f0f0f0;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  /* lights */
+  --color-prim-light-01: #fc64fc;
+  --color-prim-light-02: #ffaaff;
+  --color-prim-light-03: #fed5fe;
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  --color-sec-light-01: #ffd088;
+  --color-sec-light-02: #ffe9c8;
+  --color-sec-light-03: #fff5e7;
+
+  /* whites */
+  --color-white-01: #fef2fe;
+  --color-white-02: #fffdff;
+  --color-white-03: #fdf9f2;
+
+  --color-text: #2b282b;
+  --color-background: #fffdff;
+  --color-border: #2b282b;
+  --color-link: #f8ac39;
+  --color-link-hover: #800080;
+  --color-link-visited: #f8ac39;
+  --color-link-active: #ff00ff;
+  --color-link-focus: #ffff00;
+  --color-link-disabled: #2b282b;
+  --color-link-text: #fffdff;
+  --color-link-text-hover: #2b282b;
+  --color-link-text-visited: #fffdff;
+  --color-link-text-active: #f8ac39;
+  --color-link-text-focus: #800080;
+  --color-link-text-disabled: #f8ac39;
+  --color-link-background: #ff00ff;
+  --color-link-background-hover: #f8ac39;
+  --color-link-background-visited: #f8ac39;
+  --color-link-background-active: #ff00ff;
+  --color-link-background-focus: #00ffff;
+  --color-link-background-disabled: #800080;
+  --color-link-border: #f8ac39;
+  --color-link-border-hover: #f8ac39;
+  --color-link-border-visited: #ff00ff;
+  --color-link-border-active: #00ffff;
+  --color-link-border-focus: #800080;
+  --color-link-border-disabled: #f8ac39;
+  --color-link-shadow: #f8ac39;
+  --color-link-shadow-hover: #ff00ff;
+  --color-link-shadow-visited: #00ffff;
+  --color-link-shadow-active: #ffff00;
+  --color-link-shadow-focus: #2b282b;
+  --color-link-shadow-disabled: #fffdff;
+  --color-link-text-shadow: #2b282b;
+  --color-link-text-shadow-hover: #fffdff;
+  --color-link-text-shadow-visited: #2b282b;
+  --color-link-text-shadow-active: #fffdff;
+  --color-link-text-shadow-focus: #2b282b;
+  --color-link-text-shadow-disabled: #fffdff;
+  --color-link-background-shadow: #fffdff;
+  --color-link-background-shadow-hover: #2b282b;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+  font-family: "Roboto", sans-serif;
 }
