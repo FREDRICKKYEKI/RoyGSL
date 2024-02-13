@@ -48,6 +48,10 @@ const StyleSheet = () => {
               border-bottom: 1px solid var(--color-primary);
           }
 
+          .top-head a {
+            text-decoration: none;
+            color: var(--color-text)
+          }
           `}
     </style>
   );

@@ -87,6 +87,25 @@ body {
   margin: 0.1rem;
 }
 
+.bg-dark {
+  background-color: var(--color-dark) !important;
+}
+
 .bg-prim {
   background-color: var(--color-primary);
+}
+
+p {
+  margin-bottom: 0;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
 }
