@@ -1,15 +1,26 @@
 import { MidHeader } from "./MidHeader";
-import { Nav } from "./Nav";
+
 import { TopHeader } from "./TopHeader"
 
 export const Header = () => {
     return (
       <header>
-        <TopHeader />
-        <MidHeader />
-        <Nav />
+          <TopHeader />
+            <MidHeader />
+            <StyleSheet/>
       </header>
     );
 };
 
 
+const StyleSheet = () => {
+    return (
+      <style>
+        {`
+            header {
+                border-bottom: 1px solid var(--color-primary);
+            }
+        `}
+      </style>
+    );
+}

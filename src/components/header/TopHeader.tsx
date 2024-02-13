@@ -2,10 +2,10 @@ import { email, facebook, instagram, phone1, phone2, whatsapp } from "../../util
 
 export const TopHeader = () => {
   return (
-    <div className="top-head">
+    <div className="top-head p-2">
       <div className="container">
         <div className="d-flex gap-5 justify-content-between align-items-center">
-          <div className="d-flex gap-2 align-items-center">
+          <div className="d-flex gap-3 align-items-center">
             <div className="d-flex gap-2 align-items-center">
               <img src="icons/phone.svg" alt="phone" />
               <span>
@@ -34,6 +34,21 @@ export const TopHeader = () => {
           </div>
         </div>
       </div>
+      <StyleSheet />
     </div>
   );
 };
+
+
+const StyleSheet = () => {
+  return (
+    <style>
+      {`
+          .top-head {
+              border-bottom: 1px solid var(--color-primary);
+          }
+
+          `}
+    </style>
+  );
+}
