@@ -1,4 +1,27 @@
-import { email, facebook, instagram, phone1, phone2, whatsapp } from "../../utils";
+import {
+  email,
+  facebook,
+  instagram,
+  phone1,
+  phone2,
+  whatsapp,
+} from "../../utils";
+
+export const Socials = () => {
+  return (
+    <div className="d-flex gap-2 align-items-center">
+      <a href={`${facebook}`} target="_blank" rel="noreferrer">
+        <img src="icons/facebook.svg" alt="facebook" />
+      </a>
+      <a href={`${instagram}`} target="_blank" rel="noreferrer">
+        <img src="icons/ig.svg" alt="ig" />
+      </a>
+      <a href={`${whatsapp}`} target="_blank" rel="noreferrer">
+        <img src="icons/wa.svg" alt="wa" />
+      </a>
+    </div>
+  );
+};
 
 export const TopHeader = () => {
   return (
@@ -21,24 +44,13 @@ export const TopHeader = () => {
               </span>
             </div>
           </div>
-          <div className="d-flex gap-2 align-items-center">
-            <a href={`${facebook}`} target="_blank" rel="noreferrer">
-              <img src="icons/facebook.svg" alt="facebook" />
-            </a>
-            <a href={`${instagram}`} target="_blank" rel="noreferrer">
-              <img src="icons/ig.svg" alt="ig" />
-            </a>
-            <a href={`${whatsapp}`} target="_blank" rel="noreferrer">
-              <img src="icons/wa.svg" alt="wa" />
-            </a>
-          </div>
+          <Socials />
         </div>
       </div>
       <StyleSheet />
     </div>
   );
 };
-
 
 const StyleSheet = () => {
   return (
@@ -55,4 +67,4 @@ const StyleSheet = () => {
           `}
     </style>
   );
-}
+};

@@ -3,8 +3,8 @@ export const phone2 = "+254 782886488";
 export const email = "hrdep@roygsl.com";
 export const officeHrs = "Mon - Fri, 24hrs";
 export const address = "P.O. Box 12345-00100, Nairobi, Kenya";
-
-
 export const facebook = "https://www.facebook.com";
 export const instagram = "https://www.instagram.com";
 export const whatsapp = "https://www.whatsapp.com";
+export const footerText = "Join us on a journey of empowerment and convenience. With our comprehensive services, we're committed to helping you reach new heights, explore new horizons, and seize every opportunity that comes your way. Experience excellence with us today.";
+export const newsletterText ="Stay in the loop with our latest updates, exclusive offers, and insider insights. Subscribe to our newsletter and never miss a beat on your path to success. Sign up now to unlock a world of opportunities!";

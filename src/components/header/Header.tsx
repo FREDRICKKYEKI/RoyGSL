@@ -4,7 +4,7 @@ import { MidHeader } from "./MidHeader";
 import { TopHeader } from "./TopHeader";
 import { Brand } from "../Brand";
 
-const Accordion = ({
+const HeaderAccordion = ({
   title,
   items,
 }: {
@@ -16,7 +16,10 @@ const Accordion = ({
     <div className="d-flex flex-column position-relative">
       <div className="d-flex justify-content-between ">
         <a href={title.link}>{title.name}</a>
-        <h2 className="text-large" onClick={() => setOpenAcc(!openAcc)}>
+        <h2
+          className={`text-large btn-acc ${openAcc ? "open" : "close"}`}
+          onClick={() => setOpenAcc(!openAcc)}
+        >
           +
         </h2>
       </div>
@@ -56,7 +59,7 @@ const HeaderSm = () => {
             <a href="index.html">Home</a>
           </li>
           <li>
-            <Accordion
+            <HeaderAccordion
               title={{ name: "About Us", link: "about.html" }}
               items={[
                 { title: "Our Team", link: "our-team.html" },
@@ -66,7 +69,7 @@ const HeaderSm = () => {
             />
           </li>
           <li>
-            <Accordion
+            <HeaderAccordion
               title={{ name: "Get Hired", link: "services.html" }}
               items={[
                 { title: "Jobs Available", link: "jobs-available.html" },
@@ -76,7 +79,7 @@ const HeaderSm = () => {
             />
           </li>
           <li>
-            <Accordion
+            <HeaderAccordion
               title={{ name: "Study Abroad", link: "study-abroad.html" }}
               items={[
                 { title: "Scholarship", link: "scholarship.html" },
@@ -104,7 +107,7 @@ const HeaderLg = () => {
 };
 
 export const Header = () => {
-  const [windowSize, setWindowSize] = useState<number | null>(null);
+  const [windowSize, setWindowSize] = useState<number | null>(500);
 
   useEffect(() => {
     setWindowSize(window.innerWidth);
@@ -124,6 +127,7 @@ export const Header = () => {
     </header>
   );
 };
+
 
 const StyleSheet = () => {
   return (
@@ -198,6 +202,17 @@ const StyleSheet = () => {
 
         .drop-down ul li {
           padding: 10px 20px;
+        }
+        .btn-acc {
+          transition: transform 0.35s;
+        }
+
+        .btn-acc.open {
+          transform: rotate(45deg);
+        }
+
+        .btn-acc.close {
+          transform: rotate(0);
         }
 
       `}
