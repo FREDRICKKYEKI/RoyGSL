@@ -79,6 +79,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  height: 100vh;
 }
 
 .icon-w-15 {
@@ -112,6 +113,7 @@ h6 {
 
 #root {
   display: flex;
+  height: 100%;
   flex-direction: column;
 }
 

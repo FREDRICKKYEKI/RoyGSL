@@ -7,17 +7,30 @@ import {
   whatsapp,
 } from "../../utils";
 
-export const Socials = () => {
+export const Socials = ({ variant = "drk" }: { variant?: "drk" | "lght" }) => {
   return (
-    <div className="d-flex gap-2 align-items-center">
+    <div className="d-flex  align-items-center gap-5">
       <a href={`${facebook}`} target="_blank" rel="noreferrer">
-        <img src="icons/facebook.svg" alt="facebook" />
+        <img
+          src={`${
+            variant == "lght"
+              ? "icons/facebook-light.svg"
+              : "icons/facebook.svg"
+          }`}
+          alt="facebook"
+        />
       </a>
       <a href={`${instagram}`} target="_blank" rel="noreferrer">
-        <img src="icons/ig.svg" alt="ig" />
+        <img
+          src={`${variant == "lght" ? "icons/ig-light.svg" : "icons/ig.svg"}`}
+          alt="ig"
+        />
       </a>
       <a href={`${whatsapp}`} target="_blank" rel="noreferrer">
-        <img src="icons/wa.svg" alt="wa" />
+        <img
+          src={`${variant == "lght" ? "icons/wa-light.svg" : "icons/wa.svg"}`}
+          alt="wa"
+        />
       </a>
     </div>
   );
