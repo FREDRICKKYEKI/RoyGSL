@@ -46,7 +46,7 @@ const Styles = () => {
         <style>
         {`
           .mid-head {
-            transform: translateY(10%);
+            // transform: translateY(10%);
           }
 
           .mid-head b {

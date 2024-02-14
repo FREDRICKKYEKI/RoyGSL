@@ -1,6 +1,7 @@
 
 import {Footer} from './components/footer/Footer';
 import { Header } from './components/header/Header'
+import HomePage from './pages/home/HomePage';
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
     <>
       <Header />
       <main>
-        Main Area
+        <HomePage/>
       </main>
       <Footer/>
     </>

@@ -122,8 +122,10 @@ export const Header = () => {
 
   return (
     <header>
-      {windowSize && windowSize < 768 ? <HeaderSm /> : <HeaderLg />}
-      <StyleSheet />
+      <div>
+        {windowSize && windowSize < 768 ? <HeaderSm /> : <HeaderLg />}
+        <StyleSheet />
+      </div>
     </header>
   );
 };
@@ -134,6 +136,15 @@ const StyleSheet = () => {
     <style>
       {`
         header {
+          position: fixed;
+          width: 100%;
+          left: 0;
+          top: 0;
+          z-index: 100;
+          background-color: var(--color-white-02);
+        }
+
+        header > div{
             border-bottom: 1px solid var(--color-primary);
             position: relative;
         }
@@ -214,7 +225,11 @@ const StyleSheet = () => {
         .btn-acc.close {
           transform: rotate(0);
         }
-
+        @media (max-width: 768px) {
+          header {
+            position: relative;
+          }
+        }
       `}
     </style>
   );

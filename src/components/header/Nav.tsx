@@ -70,12 +70,12 @@ function StyleSheet() {
       <style>
         {`
             nav {
-                height: max-content;
-                transform: translateY(50%);
+              height: max-content;
+              transform: translateY(50%);
             }
 
             nav ul {
-                margin: 0;
+              margin: 0;
             }
 
             nav ul li {
@@ -116,6 +116,10 @@ function StyleSheet() {
               transition: all 0.35s;
               padding: 10px 15px;
               border-bottom: 1px solid var(--color-gray-02);
+            }
+
+            .drop-down li:last-child {
+              border-bottom: none;
             }
 
             .drop-down li:hover {
