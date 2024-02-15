@@ -8,7 +8,7 @@ export const Footer = () => {
       <div className="p-3 pt-4">
         <div className="row d-flex gap-3 justify-content-center">
           {/* Brand */}
-          <div className="col-lg-2 col-md-12 d-flex align-items-center justify-content-center">
+          <div className="col-lg-2 col-md-12 d-flex align-items-center ">
             <div className="circ-wrapper">
               <Brand variant="sm" />
             </div>
