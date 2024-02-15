@@ -130,7 +130,6 @@ export const Header = () => {
   );
 };
 
-
 const StyleSheet = () => {
   return (
     <style>
@@ -141,7 +140,8 @@ const StyleSheet = () => {
           left: 0;
           top: 0;
           z-index: 100;
-          background-color: var(--color-white-02);
+          background-color: var(--color-trans-white);
+          backdrop-filter: blur(30px);
         }
 
         header > div{

@@ -1,12 +1,14 @@
-import { HeroSection } from "./sections/HeroSection";
-import { ServicesSection } from "./sections/ServicesSections";
+import { FeaturedServices } from "./components/sections/FeaturedServices";
+import { HeroSection } from "./components/sections/HeroSection";
+import { ServicesSection } from "./components/sections/ServicesSections";
 
 const HomePage = () => {
   return (
     <>
       <HeroSection />
       <div className="container">
-        <ServicesSection/>
+        <ServicesSection />
+        <FeaturedServices />
       </div>
       <StyleSheet />
     </>
@@ -15,12 +17,6 @@ const HomePage = () => {
 
 export default HomePage;
 
-
 const StyleSheet = () => {
-
-    return (
-      <style>
-        {``}
-      </style>
-    );
-}
+  return <style>{``}</style>;
+};

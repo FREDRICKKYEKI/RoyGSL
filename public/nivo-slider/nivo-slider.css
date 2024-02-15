@@ -104,6 +104,7 @@
 }
 /* Control nav styles (e.g. 1,2,3...) */
 .nivo-controlNav {
+  display: none !important;
   text-align: center;
   padding: 15px 0;
 }
@@ -118,5 +119,9 @@
   .nivo-caption {
     height: 100%;
     inset: 0;
+  }
+
+  .welcome-hero-txt {
+    transform: translateY(100%);
   }
 }

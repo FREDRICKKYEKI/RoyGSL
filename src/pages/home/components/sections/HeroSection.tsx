@@ -88,16 +88,29 @@ const StyleSheet = () => {
             .welcome-hero-txt {
                 color: var(--white-color-02);
                 font-size: 16px;
-                animation: ${(window as any).randomAnimation} 1s ease-in-out;
+                // animation: ${(window as any).randomAnimation} 1s ease-in-out;
                 text-align: center;
             }
 
-            .welcome-hero-txt.second {
-                animation: ${(window as any).animations[0]} 1s ease-in-out;
+            .welcome-hero-txt h2 {
+              animation: ${(window as any).animations[2]} 1s ease-in-out;
             }
 
-            .welcome-hero-txt.third{
-                animation: ${(window as any).animations[4]} 1s ease-in-out;
+            .welcome-hero-txt p {
+                animation: flipInY 1s ease-in-out;
+            }
+
+            .welcome-hero-txt.second p {
+              animation: bounceInRight 1s ease-in-out !important;
+            }
+
+            .welcome-hero-txt.third p {
+              animation: ${(window as any).animations[6]} 1s ease-in-out;
+            }
+
+
+            .welcome-hero-txt.third p {
+                animation: rotateIn 1s ease-in-out;
             }
 
             .welcome-hero-txt h2,
