@@ -82,10 +82,12 @@ const StyleSheet = () => {
   return (
     <style>
       {`
+            .welcome-hero img {
+              background: var(--color-dark);
+            }
             .welcome-hero-txt {
                 color: var(--white-color-02);
                 font-size: 16px;
-                // animation: ${(window as any).randomAnimation} 1s ease-in-out;
                 text-align: center;
             }
 

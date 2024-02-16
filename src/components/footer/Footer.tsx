@@ -5,7 +5,7 @@ import { Socials } from "../header/TopHeader";
 export const Footer = () => {
   return (
     <footer className="bg-dark">
-      <div className="p-3 pt-4">
+      <div className="p-4 pt-4">
         <div className="row d-flex gap-3 justify-content-center">
           {/* Brand */}
           <div className="col-lg-2 col-md-12 d-flex align-items-center ">
@@ -61,7 +61,7 @@ export const Footer = () => {
           <div className="col-lg-2 w-20 col-md-12">
             <h4>Newsletter</h4>
             <small>{newsletterText}</small>
-            <form className="mt-2 form d-flex align-items-center">
+            <form className="mt-2 form d-flex align-items-center justify-content-between">
               <input type="email" placeholder="Enter your email" />
               <button type="submit">
                 <img src="icons/send.svg" alt="send" />
@@ -76,8 +76,8 @@ export const Footer = () => {
 };
 
 const StyleSheet = () => {
-    return (
-      <style>{`
+  return (
+    <style>{`
         footer ul li {
             color: var(--color-white-02);
             list-style: none;
@@ -113,16 +113,15 @@ const StyleSheet = () => {
         form {
           border-radius: 50px;
           background-color: var(--color-white-01);
+          padding: 7.5px 10px;
           width: 100%
         }
         form input {
           all: unset;
-          padding: 7.5px 10px;
-          width: 70%;
+          width: 100%;
         }
         form button {
           all: unset;
-          margin-inline: .5rem;
           padding: 7.5px 10px;
           width: 10%;
           display: flex;
@@ -133,5 +132,5 @@ const StyleSheet = () => {
         }
 
         `}</style>
-    );
-}
+  );
+};

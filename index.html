@@ -52,10 +52,12 @@
 
   </script>
   <script type="module" src="/src/main.tsx"></script>
-  <script src="js/jquery.js"></script>
 
-  <!--modernizr.min.js-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <!-- jquery -->
+  <script src="js/jquery.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> -->
+
+
 
   <!--bootstrap.min.js-->
   <script src="js/bootstrap.min.js"></script>
@@ -68,12 +70,19 @@
 
   <!-- counter js -->
   <script src="js/jquery.counterup.min.js"></script>
+
+  <!--waypoints.min.js-->
   <script src="js/waypoints.min.js"></script>
 
   <!--slick.min.js-->
-  <script src="js/slick.min.js"></script>
+  <!-- <script src="js/slick.min.js"></script> -->
+  <!-- Slick carousel CSS -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <!-- carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script> -->
 
   <!-- counter -->
   <script src="js/jquery.counterup.min.js"></script>
@@ -82,12 +91,9 @@
   <script src="js/custom.js"></script>
 
   <script type="text/javascript" src="nivo-slider/jquery.nivo.slider.js"></script>
+
   <script type="text/javascript">
     $(window).load(function () {
-      // $('.counter').counterUp({
-      //   delay: 10,
-      //   time: 3000
-      // });
       $('#slider').nivoSlider({
         effect: 'boxRainGrowReverse', // Specify sets like: 'sliceDownLeft sliceUp sliceUpLeft sliceUpDown sliceUpDownLeft fold fade random slideInRight slideInLeft boxRandom boxRain boxRainReverse boxRainGrow boxRainGrowReverse'
         slices: 15, // For slice animations

@@ -1,4 +1,4 @@
-const StatsCounter = () => {
+export const StatsCounter = () => {
   return (
     <section className="stats-counter row mt-5">
       <h3 className="stats-title mb-4">Our Company in Numbers</h3>
@@ -30,8 +30,6 @@ const StatsCounter = () => {
     </section>
   );
 };
-
-export default StatsCounter;
 
 const StyleSheet = () => {
   return (

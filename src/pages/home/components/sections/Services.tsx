@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Service } from "../../../../types";
 import { SERVICES_LIST, icons } from "../../../../utils";
 
-export const ServicesSection = () => {
+export const Services = () => {
   const [active, setActive] = useState<Service>(SERVICES_LIST[0]);
 
   return (
