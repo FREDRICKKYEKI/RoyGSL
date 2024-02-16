@@ -122,6 +122,7 @@
   }
 
   .welcome-hero-txt {
-    transform: translateY(100%);
+    font-size: 0.8rem !important;
+    transform: translateY(40%);
   }
 }

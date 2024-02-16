@@ -39,10 +39,7 @@ export const HeroSection = () => {
         </div>
         <div id="htmlcaption1" className="nivo-caption">
           <div className="welcome-hero-txt first">
-            <h2>
-              best place to find and explore <br /> all you the Human Resource
-              you need
-            </h2>
+            <h2>All you the Human Resource you need</h2>
             <p>
               Find and explore the top rated Human Resource you need for your
               business

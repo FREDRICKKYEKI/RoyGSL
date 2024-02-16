@@ -6,8 +6,8 @@ export const ServicesSection = () => {
   const [active, setActive] = useState<Service>(SERVICES_LIST[0]);
 
   return (
-    <section className="services row mt-5">
-      <ul className="col-md-4 col-sm-6 col-xs-12 d-flex flex-column gap-2">
+    <section className="services row">
+      <ul className="col-md-4 col-sm-6 col-xs-12 d-flex flex-column gap-2 mt-4">
         {SERVICES_LIST.map((service) => (
           <li
             key={service.key}
@@ -30,7 +30,7 @@ export const ServicesSection = () => {
           </li>
         ))}
       </ul>
-      <article className="service-description col-md-8 col-sm-6 col-xs-12 d-flex flex-column gap-3">
+      <article className="service-description col-md-8 col-sm-6 col-xs-12 d-flex flex-column gap-3 mt-4">
         <h4>{active["name"]}</h4>
         <div
           dangerouslySetInnerHTML={{ __html: `<p>${active["desc"]}</p>` }}

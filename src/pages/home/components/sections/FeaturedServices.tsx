@@ -6,7 +6,10 @@ export const FeaturedServices = () => {
       <h2 className="mb-5">{featuredServices.title}</h2>
       <p className="mb-4 p-0">{featuredServices.desc}</p>
       {featuredServices.services.map((service) => (
-        <div className="col-md-4 col-sm-6 col-xs-12 d-flex justify-content-between gap-3 mb-3">
+        <div
+          key={service.name}
+          className="col-md-4 col-sm-6 col-xs-12 d-flex justify-content-between gap-3 mb-3"
+        >
           <div>
             <img src={icons[service.icon]} alt={`${service.name}`} />
           </div>

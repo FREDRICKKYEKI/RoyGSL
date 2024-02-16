@@ -34,21 +34,21 @@
   <div id="root"></div>
   <script>
     window.animations = ["fadeIn",
-        "fadeInDown",
-        "fadeInDownBig",
-        "fadeInLeft",
-        "fadeInLeftBig",
-        "fadeInRight",
-        "fadeInRightBig",
-        "fadeInUp",
-        "fadeInUpBig",
-        "fadeInTopLeft",
-        "fadeInTopRight"]
+      "fadeInDown",
+      "fadeInDownBig",
+      "fadeInLeft",
+      "fadeInLeftBig",
+      "fadeInRight",
+      "fadeInRightBig",
+      "fadeInUp",
+      "fadeInUpBig",
+      "fadeInTopLeft",
+      "fadeInTopRight"]
 
-      let randomAnimation = window.animations[Math.floor(Math.random() * animations.length)];
-      randomAnimation = window.animations[Math.floor(Math.random() * animations.length)];
+    let randomAnimation = window.animations[Math.floor(Math.random() * animations.length)];
+    randomAnimation = window.animations[Math.floor(Math.random() * animations.length)];
 
-      window.randomAnimation = randomAnimation;
+    window.randomAnimation = randomAnimation;
 
   </script>
   <script type="module" src="/src/main.tsx"></script>
@@ -75,11 +75,19 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
+  <!-- counter -->
+  <script src="js/jquery.counterup.min.js"></script>
+
   <!--Custom JS-->
   <script src="js/custom.js"></script>
+
   <script type="text/javascript" src="nivo-slider/jquery.nivo.slider.js"></script>
   <script type="text/javascript">
     $(window).load(function () {
+      // $('.counter').counterUp({
+      //   delay: 10,
+      //   time: 3000
+      // });
       $('#slider').nivoSlider({
         effect: 'boxRainGrowReverse', // Specify sets like: 'sliceDownLeft sliceUp sliceUpLeft sliceUpDown sliceUpDownLeft fold fade random slideInRight slideInLeft boxRandom boxRain boxRainReverse boxRainGrow boxRainGrowReverse'
         slices: 15, // For slice animations
