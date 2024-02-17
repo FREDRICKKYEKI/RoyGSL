@@ -1,19 +1,21 @@
 import { FeaturedServices } from "./components/sections/FeaturedServices";
-import { HeroSection } from "./components/sections/HeroSection";
+import { WelcomeHero } from "./components/sections/WelcomeHero";
 import { OurPartners } from "./components/sections/OurPartners";
 import { Services } from "./components/sections/Services";
 import { StatsCounter } from "./components/sections/StatsCounter";
+import FinalHero from "./components/sections/FinalHero";
 
 const HomePage = () => {
   return (
     <>
-      <HeroSection />
+      <WelcomeHero />
       <div className="container">
         <Services />
         <FeaturedServices />
         <StatsCounter />
         <OurPartners />
       </div>
+      <FinalHero />
       <StyleSheet />
     </>
   );

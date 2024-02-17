@@ -12,6 +12,7 @@ export const OurPartners = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     variableWidth: true,
+    pauseOnHover: true, // Pause autoplay when hovering over the slider
   };
   return (
     <section className="our-partners mt-5">
@@ -21,7 +22,7 @@ export const OurPartners = () => {
           <img
             key={resource}
             src={`images/partners/${resource}`}
-            alt={`Partner ${resource.slice(-3)}`}
+            alt={`Partner-${resource.slice(0, -4)}`}
           />
         ))}
       </Slider>

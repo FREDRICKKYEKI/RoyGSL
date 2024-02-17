@@ -1,4 +1,4 @@
-export const HeroSection = () => {
+export const WelcomeHero = () => {
   return (
     <>
       <section className="welcome-hero slider-wrapper theme-default">

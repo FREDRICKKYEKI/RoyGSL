@@ -12,6 +12,7 @@ import job_light from "./assets/svgs/job-light.svg";
 import job_prim from "./assets/svgs/job-prim.svg";
 
 export const phone1 = "+254 726886488";
+export const developer = "fredrickkyeki.github.io/portfolio-website/";
 export const phone2 = "+254 782886488";
 export const email = "hrdep@roygsl.com";
 export const officeHrs = "Mon - Fri, 24hrs";
@@ -109,3 +110,8 @@ export const partners = [
   "voco.jpg",
   "wyndham.jpg",
 ];
+
+export const finalHeroText =
+  "Get <b>Hired</b> today. <br/> Thousands of jobs. <br/>Available across the globe.";
+
+export const flags = ["dubai.jpg", "afg.jpg", "canada.jpg"];
