@@ -7,7 +7,7 @@ const FinalHero = () => {
         <div className="col-lg-6 col-sm-12 p-0 d-flex align-items-center justify-content-center">
           <p dangerouslySetInnerHTML={{ __html: finalHeroText }} />
         </div>
-        <div className="col-lg-6 col-sm-12 p-0 ">
+        <div className="col-lg-6 col-sm-12 p-0 justify-content-center">
           <div className="flags d-flex align-items-center">
             {flags.map((flag, index) => (
               <img

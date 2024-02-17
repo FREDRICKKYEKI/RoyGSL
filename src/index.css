@@ -136,3 +136,8 @@ main {
   height: 0.25rem;
   background: var(--color-primary);
 }
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0;
+}
