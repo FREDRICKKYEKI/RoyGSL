@@ -1,20 +1,21 @@
+import { FC } from "react";
+import { Footer } from "./components/footer/Footer";
+import { Header } from "./components/header/Header";
+import HomePage from "./pages/home/HomePage";
+import { Route, Routes } from "react-router-dom";
 
-import {Footer} from './components/footer/Footer';
-import { Header } from './components/header/Header'
-import HomePage from './pages/home/HomePage';
-
-function App() {
-
-
+const App: FC = () => {
   return (
     <>
       <Header />
       <main>
-        <HomePage/>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
-}
+};
 
-export default App
+export default App;

@@ -1,4 +1,4 @@
-import { IconMap, Service } from "./types";
+import { IconMap, MidHeaderProps, Service } from "./types";
 import scholarship_logo from "./assets/svgs/scholarship_logo.svg";
 import scholarship_logo_light from "./assets/svgs/scholarship_logo-light.svg";
 import scholarship_logo_prim from "./assets/svgs/scholarship_logo-prim.svg";
@@ -24,6 +24,24 @@ export const footerText =
   "Join us on a journey of empowerment and convenience. With our comprehensive services, we're committed to helping you reach new heights, explore new horizons, and seize every opportunity that comes your way. Experience excellence with us today.";
 export const newsletterText =
   "Stay in the loop with our latest updates, exclusive offers, and insider insights. Subscribe to our newsletter and never miss a beat on your path to success. Sign up now to unlock a world of opportunities!";
+
+export const MidHeaderElems: MidHeaderProps[] = [
+  {
+    icon: "icons/phone.svg",
+    text: `${phone1} | ${phone2}`,
+    smallText: "Hotline",
+  },
+  {
+    icon: "icons/location.svg",
+    text: address,
+    smallText: "Address",
+  },
+  {
+    icon: "icons/clock.svg",
+    text: officeHrs,
+    smallText: "Office Hours",
+  },
+];
 
 export const icons: IconMap = {
   scholarships: scholarship_logo,

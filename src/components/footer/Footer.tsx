@@ -87,6 +87,7 @@ const StyleSheet = () => {
         }
         footer h3,
         footer h4 {
+          margin-top: 1rem;
           margin-bottom: .2rem;
         }
 
