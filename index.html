@@ -51,11 +51,53 @@
     window.randomAnimation = randomAnimation;
 
   </script>
+  <!-- loader -->
+  <div id="preloader" class="d-flex flex-column gap-3">
+    <style>
+      #preloader {
+        position: fixed;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        background-color: var(--color-background);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* HTML: <div class="loader"></div> */
+      .loader {
+        height: 4px;
+        width: 130px;
+        --c: no-repeat linear-gradient(#800080 0 0);
+        background: var(--c), var(--c), #d7b8fc;
+        background-size: 60% 100%;
+        animation: l16 3s infinite;
+      }
+
+      @keyframes l16 {
+        0% {
+          background-position: -150% 0, -150% 0
+        }
+
+        66% {
+          background-position: 250% 0, -150% 0
+        }
+
+        100% {
+          background-position: 250% 0, 250% 0
+        }
+      }
+    </style>
+    <img src='logo/logo.png' alt='RoyGSL' />
+    <div class="loader"></div>
+  </div>
+
   <script type="module" src="/src/main.tsx"></script>
 
   <!-- jquery -->
   <script src="js/jquery.js"></script>
-  <!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> -->
 
   <!-- parallaxie -->
   <script src="js/parallaxie.js"></script>
@@ -89,31 +131,7 @@
   <script type="text/javascript" src="nivo-slider/jquery.nivo.slider.js"></script>
 
   <script type="text/javascript">
-    $(window).load(function () {
-      $('#slider').nivoSlider({
-        effect: 'boxRainGrowReverse', // Specify sets like: 'sliceDownLeft sliceUp sliceUpLeft sliceUpDown sliceUpDownLeft fold fade random slideInRight slideInLeft boxRandom boxRain boxRainReverse boxRainGrow boxRainGrowReverse'
-        slices: 15, // For slice animations
-        boxCols: 8, // For box animations
-        boxRows: 4, // For box animations
-        animSpeed: 1000, // Slide transition speed
-        pauseTime: 20000, // How long each slide will show
-        startSlide: 0, // Set starting Slide (0 index)
-        directionNav: true, // Next & Prev navigation
-        controlNav: true, // 1,2,3... navigation
-        controlNavThumbs: false, // Use thumbnails for Control Nav
-        pauseOnHover: false, // Stop animation while hovering
-        manualAdvance: false, // Force manual transitions
-        prevText: 'Prev', // Prev directionNav text
-        nextText: 'Next', // Next directionNav text
-        randomStart: false, // Start on a random slide
-        beforeChange: function () { }, // Triggers before a slide transition
-        afterChange: function () { }, // Triggers after a slide transition
-        slideshowEnd: function () { }, // Triggers after all slides have been shown
-        lastSlide: function () { }, // Triggers when last slide is shown
-        afterLoad: function () { } // Triggers when slider has loaded
 
-      });
-    });
   </script>
 
 </body>

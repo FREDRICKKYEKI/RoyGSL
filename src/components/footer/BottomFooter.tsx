@@ -22,7 +22,7 @@ const StyleSheet = () => {
     <style>
       {`
             .bottom-footer {
-                border-top: 1px solid var(--color-gray-02);
+                border-top: 1px solid var(--color-gray-01);
             }
 
             .bottom-footer small {

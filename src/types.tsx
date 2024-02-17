@@ -5,7 +5,12 @@ export type Service = {
   icon: string;
 };
 
-
 export type IconMap = {
-    [key: string]: string;
+  [key: string]: string;
+};
+
+export type MidHeaderProps = {
+  icon: string;
+  text: string;
+  smallText: string;
 };

@@ -1,7 +1,10 @@
+import { FC } from "react";
+
 interface BrandProps {
-    variant?: "sm" | "lg";
+  variant?: "sm" | "lg";
 }
-export const Brand = ({ variant = "sm" }: BrandProps) => {
+
+export const Brand: FC<BrandProps> = ({ variant = "sm" }) => {
   return (
     <div className="nav-logo">
       <a href="index.html">

@@ -9,6 +9,14 @@ export const WelcomeHero = () => {
             alt=""
             title="#htmlcaption1"
             data-transition="slideInLeft"
+            onLoad={() => {
+              console.log("loaded");
+              document
+                .getElementById("preloader")
+                ?.parentNode?.removeChild(
+                  document.getElementById("preloader")!
+                );
+            }}
           />
           <img
             src="images/welcome-hero/five.jpg"
@@ -34,9 +42,7 @@ export const WelcomeHero = () => {
         </div>
         <div id="htmlcaption2" className="nivo-caption">
           <div className="welcome-hero-txt second">
-            <h2>
-              Guaranteed Job Placement <br /> for the right candidates
-            </h2>
+            <h2>Guaranteed Job Placement for the right candidates</h2>
             <p>
               We help candidates find the right job and get placed in the right
               company
@@ -75,21 +81,29 @@ const StyleSheet = () => {
             }
 
             .welcome-hero-txt {
-                transform: translateY(120%);
-                color: var(--white-color-02);
-                font-size: 16px;
-                text-align: center;
-                min-height: 150px;
+              transform: translateY(120%);
+              color: var(--white-color-02);
+              font-size: 16px;
+              min-height: 150px;
+              margin-left: 10%;
+              text-align: start;
             }
 
             .welcome-hero-txt h2 {
-              animation: ${(window as any).animations[2]} 1s ease-in-out;
+              animation: bounceInDown 1s ease-in-out !important;
             }
 
             .welcome-hero-txt p {
                 animation: flipInY 1s ease-in-out;
             }
 
+            .welcome-hero-txt.second h2 {
+              animation: bounceInLeft 1s ease-in-out !important;
+            }
+
+            .welcome-hero-txt.third h2 {
+              animation: bounceInRight 1s ease-in-out !important;
+            }
 
             .welcome-hero-txt.second p {
               animation: bounceInRight 1s ease-in-out !important;
@@ -101,7 +115,7 @@ const StyleSheet = () => {
 
 
             .welcome-hero-txt.third p {
-                animation: rotateIn 1s ease-in-out;
+                animation: bounceInUp 1s ease-in-out;
             }
 
             .welcome-hero-txt h2,
@@ -126,9 +140,12 @@ const StyleSheet = () => {
                 inset: 0;
               }
 
+              .welcome-hero-txt h2 {
+                font-size: 1rem !important;
+              }
+
               .welcome-hero-txt {
-                font-size: 0.8rem !important;
-                transform: translateY(40%);
+                transform: translateY(0%);
               }
             }
 
