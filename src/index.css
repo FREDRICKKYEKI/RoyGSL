@@ -140,4 +140,5 @@ main {
 .wrapper {
   margin: 0 auto;
   padding: 0;
+  overflow-x: hidden;
 }

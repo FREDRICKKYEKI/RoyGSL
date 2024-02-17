@@ -227,7 +227,7 @@ const StyleSheet = () => {
         }
         @media (max-width: 768px) {
           header {
-            position: relative;
+            // position: relative;
           }
         }
       `}
