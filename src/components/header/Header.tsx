@@ -135,7 +135,7 @@ const StyleSheet = () => {
     <style>
       {`
         header {
-          position: fixed;
+          position: sticky;
           width: 100%;
           left: 0;
           top: 0;

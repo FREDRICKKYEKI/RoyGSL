@@ -6,7 +6,9 @@
   --color-secondary: #f8ac39;
   --color-tertiary: hwb(36 22% 3%);
   --color-dark: #2b282b;
+
   --color-trans-white: #fffdff;
+  --color-trans-dark: #2b282b70;
   /* grayscale */
   --color-gray-01: #7b797b;
   --color-gray-02: #9b999b;
@@ -120,4 +122,17 @@ h6 {
 main {
   flex: 1;
   padding-bottom: 2rem;
+}
+.primary-underline {
+  position: relative;
+}
+
+.primary-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -1.2rem;
+  left: 0;
+  width: 3rem;
+  height: 0.25rem;
+  background: var(--color-primary);
 }

@@ -1,6 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { partners } from "../../../../utils";
 
 export const OurPartners = () => {
   const settings = {
@@ -13,10 +14,15 @@ export const OurPartners = () => {
     variableWidth: true,
   };
   return (
-    <section className="our-partner mt-5">
+    <section className="our-partners mt-5">
+      <h3 className="primary-underline mb-5">Our Partners</h3>
       <Slider {...settings}>
-        {Array.from({ length: 100 }).map((_, _index) => (
-          <img src="partner1.jpg" alt={`Partner ${_index}`} />
+        {partners.map((resource, _index) => (
+          <img
+            key={resource}
+            src={`images/partners/${resource}`}
+            alt={`Partner ${resource.slice(-3)}`}
+          />
         ))}
       </Slider>
       <StyleSheet />
@@ -27,7 +33,12 @@ export const OurPartners = () => {
 const StyleSheet = () => (
   <style>
     {`
-
+      .our-partners img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        margin: 0 1rem;
+      }
   `}
   </style>
 );

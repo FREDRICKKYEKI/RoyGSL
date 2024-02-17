@@ -115,14 +115,4 @@
   font-weight: bold;
 }
 
-@media screen and (max-width: 767px) {
-  .nivo-caption {
-    height: 100%;
-    inset: 0;
-  }
 
-  .welcome-hero-txt {
-    font-size: 0.8rem !important;
-    transform: translateY(40%);
-  }
-}

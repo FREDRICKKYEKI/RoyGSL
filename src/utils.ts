@@ -86,3 +86,26 @@ export const featuredServices = {
     },
   ],
 };
+
+export const partners = [
+  "babylon.jpg",
+  "bashneft.jpg",
+  "borgata.jpg",
+  "care.jpg",
+  "chairmen.jpg",
+  "dragon.jpg",
+  "erbil.jpg",
+  "ezdan.jpg",
+  "ibis.jpg",
+  "kuwait.jpg",
+  "marina.jpg",
+  "mercure.jpg",
+  "mic.jpg",
+  "palace.jpg",
+  "palm.jpg",
+  "petronas.jpg",
+  "safir.jpg",
+  "staybridge.jpg",
+  "voco.jpg",
+  "wyndham.jpg",
+];

@@ -3,7 +3,7 @@ import { featuredServices, icons } from "../../../../utils";
 export const FeaturedServices = () => {
   return (
     <section className="featured-services row mt-5">
-      <h2 className="mb-5">{featuredServices.title}</h2>
+      <h2 className="primary-underline mb-5">{featuredServices.title}</h2>
       <p className="mb-4 p-0">{featuredServices.desc}</p>
       {featuredServices.services.map((service) => (
         <div
@@ -38,16 +38,6 @@ const StyleSheet = () => {
           position: relative;
           padding: unset;
           font-size: 28px;
-        }
-
-        .featured-services  h2::after {
-          content: "";
-          position: absolute;
-          bottom: -1.2rem;
-          left: 0;
-          width: 4rem;
-          height: 0.25rem;
-          background: var(--color-primary);
         }
 
         .featured-services h4 {

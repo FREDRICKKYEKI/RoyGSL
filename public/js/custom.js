@@ -14,7 +14,7 @@ $(document).ready(function () {
 3. welcome animation support
 4. feather icon
 5. counter
-6. marquee
+6. parallaxie
 ======================================*/
 
   // 1. Scroll To Top
@@ -116,4 +116,7 @@ $(document).ready(function () {
       time: 3000,
     });
   });
+
+  // 6. parallaxie
+  $(".parallaxie").parallaxie();
 });

@@ -1,6 +1,6 @@
 export const StatsCounter = () => {
   return (
-    <section className="stats-counter row mt-5">
+    <section className="stats-counter parallaxie row mt-5">
       <h3 className="stats-title mb-4">Our Company in Numbers</h3>
       <div className="col-md-3 col-sm-6 mt-3">
         <div className="stats-item  text-center">
@@ -35,12 +35,14 @@ const StyleSheet = () => {
   return (
     <style>
       {`
+        .parallaxie {
+          background-image: url(images/stats/stats-bg.jpg);
+          background-size: cover;
+        }
         .stats-counter {
             padding: 40px 0;
             color: var(--color-white-03) !important;
             text-align: center;
-            background-image: url(images/stats/stats-bg.jpg);
-            background-size: cover;
         }
         `}
     </style>
