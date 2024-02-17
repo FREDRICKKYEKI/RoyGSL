@@ -1,4 +1,4 @@
-import { featuredServices, icons } from "../../../../utils";
+import { featuredServices, icons } from "../../../utils";
 
 export const FeaturedServices = () => {
   return (

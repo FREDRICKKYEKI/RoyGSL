@@ -1,9 +1,9 @@
-import { FeaturedServices } from "./components/sections/FeaturedServices";
-import { WelcomeHero } from "./components/sections/WelcomeHero";
-import { OurPartners } from "./components/sections/OurPartners";
-import { Services } from "./components/sections/Services";
-import { StatsCounter } from "./components/sections/StatsCounter";
-import FinalHero from "./components/sections/FinalHero";
+import { FeaturedServices } from "./sections/FeaturedServices";
+import { WelcomeHero } from "./sections/WelcomeHero";
+import { OurPartners } from "./sections/OurPartners";
+import { Services } from "./sections/Services";
+import { StatsCounter } from "./sections/StatsCounter";
+import FinalHero from "./sections/FinalHero";
 
 const HomePage = () => {
   return (

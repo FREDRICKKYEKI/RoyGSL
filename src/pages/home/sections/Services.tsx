@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Service } from "../../../../types";
-import { SERVICES_LIST, icons } from "../../../../utils";
+import { Service } from "../../../types";
+import { SERVICES_LIST, icons } from "../../../utils";
 
 export const Services = () => {
   const [active, setActive] = useState<Service>(SERVICES_LIST[0]);

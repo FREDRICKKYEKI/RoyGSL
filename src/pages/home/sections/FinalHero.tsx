@@ -1,4 +1,4 @@
-import { finalHeroText, flags } from "../../../../utils";
+import { finalHeroText, flags } from "../../../utils";
 
 const FinalHero = () => {
   return (

@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { partners } from "../../../../utils";
+import { partners } from "../../../utils";
 
 export const OurPartners = () => {
   const settings = {
